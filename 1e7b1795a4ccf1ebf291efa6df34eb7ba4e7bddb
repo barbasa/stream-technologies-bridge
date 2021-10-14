@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9f966651_005b4304",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2021-10-14T14:18:38Z",
+      "side": 1,
+      "message": "I am running the bridge on gerrithub.io to see if any issue arises on the long run.",
+      "revId": "1e7b1795a4ccf1ebf291efa6df34eb7ba4e7bddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}

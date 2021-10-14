@@ -16,6 +16,24 @@
       "message": "Some OOM errors when running on gerrithub:\n\nException in thread \"kpl-daemon-0001\" java.lang.OutOfMemoryError: unable to create new native thread\n\tat java.lang.Thread.start0(Native Method)\n\tat java.lang.Thread.start(Thread.java:717)\n\tat java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:957)\n\tat java.util.concurrent.ThreadPoolExecutor.processWorkerExit(ThreadPoolExecutor.java:1025)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n12:06:07.037 ERROR .a.services.kinesis.producer.LogInputStreamReader]  [2021-10-14 12:06:07.037591] [0x00007444][0x00007f5bacd7f700] [error] [metrics_manager.cc:145] Metrics upload failed. | Code:  | Message: curlCode: 6, Couldn\u0027t resolve host name | Request was: Action\u003dPutMetricData\u0026Namespace\u003dKinesisProducerLibrary\u0026MetricData.member.1.MetricName\u003dUserRecordsPending\u0026MetricData.member.1.Timestamp\u003d2021-10-14T10%3A06%3A06Z\u0026MetricData.member.1.StatisticValues.SampleCount\u003d296\u0026MetricData.member.1.StatisticValues.Sum\u003d0\u0026MetricData.member.1.StatisticValues.Minimum\u003d0\u0026MetricData.member.1.StatisticValues.Maximum\u003d0\u0026MetricData.member.1.Unit\u003dCount\u0026MetricData.member.2.MetricName\u003dUserRecordsPending\u0026MetricData.member.2.Dimensions.member.1.Name\u003dStreamName\u0026MetricData.member.2.Dimensions.member.1.Value\u003dgerrit_cache\u0026MetricData.member.2.Timestamp\u003d2021-10-14T10%3A06%3A06Z\u0026MetricData.member.2.StatisticValues.SampleCount\u003d296\u0026MetricData.member.2.StatisticValues.Sum\u003d0\u0026MetricData.member.2.StatisticValues.Minimum\u003d0\u0026MetricData.member.2.StatisticValues.Maximum\u003d0\u0026MetricData.member.2.Unit\u003dCount\u0026Version\u003d2010-08-01\n12:06:09.544 ERROR [c.a.services.kinesis.producer.KinesisProducer]     Error in child process\njava.lang.RuntimeException: EOF reached during read\n\tat com.amazonaws.services.kinesis.producer.Daemon.fatalError(Daemon.java:532)\n\tat com.amazonaws.services.kinesis.producer.Daemon.fatalError(Daemon.java:508)\n\tat com.amazonaws.services.kinesis.producer.Daemon.fatalError(Daemon.java:504)\n\tat com.amazonaws.services.kinesis.producer.Daemon.readSome(Daemon.java:553)\n\tat com.amazonaws.services.kinesis.producer.Daemon.receiveMessage(Daemon.java:243)\n\tat com.amazonaws.services.kinesis.producer.Daemon.access$500(Daemon.java:61)\n\tat com.amazonaws.services.kinesis.producer.Daemon$3.run(Daemon.java:298)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)",
       "revId": "b399c52fab1b49d66ef29a7d49f2459403f98d90",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "96cbcb83_4050859e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2021-10-14T14:18:38Z",
+      "side": 1,
+      "message": "This is not happening anymore.",
+      "parentUuid": "e234274f_10dba6a8",
+      "revId": "b399c52fab1b49d66ef29a7d49f2459403f98d90",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
