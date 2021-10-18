@@ -1,9 +1,6 @@
 package com.gerritforge
 
-import com.amazonaws.services.kinesis.producer.{
-  KinesisProducer,
-  KinesisProducerConfiguration
-}
+import com.amazonaws.services.kinesis.producer.{KinesisProducerConfiguration}
 import com.contxt.kinesis.ScalaKinesisProducer
 import com.typesafe.scalalogging.Logger
 import org.slf4j.LoggerFactory
