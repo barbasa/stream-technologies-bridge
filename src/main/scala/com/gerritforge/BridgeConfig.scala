@@ -14,6 +14,8 @@ case class BridgeConfig(configFilePath: String) {
   val topics: Set[String] = conf.getOrElse("common.topics", "").split(",").toSet
   val skipLocalMessages: Boolean =
     conf.getOrElse("common.skipLocalMessages", "false").toBoolean
+  val onlyForwardLocalMessages: Boolean =
+    conf.getOrElse("common.onlyForwardLocalMessages", "false").toBoolean
   val instanceId: String = conf.getOrElse("common.instanceId", "")
 }
 
