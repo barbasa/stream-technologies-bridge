@@ -7,8 +7,14 @@ import akka.actor.typed.scaladsl.Behaviors
 import akka.kafka.scaladsl.{Committer, Consumer}
 import akka.kafka._
 import akka.kafka.scaladsl.Consumer.DrainingControl
+import akka.stream.alpakka.kinesis.CommittableRecord
+import akka.stream.alpakka.kinesis.scaladsl.KinesisSchedulerSource
+import akka.stream.scaladsl.{Sink, Source}
+import com.gerritforge.BridgeKinesisConsumer.checkpointSettings
 import com.typesafe.scalalogging.Logger
+import org.apache.kafka.clients.producer.ProducerRecord
 import org.slf4j.LoggerFactory
+import software.amazon.kinesis.coordinator.Scheduler
 
 import java.nio.ByteBuffer
 import java.nio.charset.StandardCharsets
@@ -80,6 +86,22 @@ object BrokerBridge extends App {
 
   }
 
+    private def forwardRecordsFromKinesisToKafka(bridgeConfig: BridgeConfig) = {
+      logger.info("\uD83D\uDE80 Forwarding messages from Kinesis to Kafka")
+
+      val bridgeKafkaProducer = BridgeKafkaProducer(bridgeConfig, actorSystem)
+      val bridgeKinesisConsumer = BridgeKinesisConsumer(bridgeConfig, actorSystem)
+
+      bridgeKinesisConsumer.bridgeKinesisConsumerSources.foreach{ case (topic: String, source: Source[CommittableRecord, Future[Scheduler]]) =>
+        source.via(KinesisSchedulerSource.checkpointRecordsFlow(checkpointSettings)).map{ kinesisRecord =>
+                  logger.debug(s"*** Processing record of topic $topic")
+                  val value = StandardCharsets.UTF_8.decode(kinesisRecord.data()).toString
+                  new ProducerRecord[String, String](topic, value)
+                }
+                .runWith(bridgeKafkaProducer.kafkaSink)
+      }
+    }
+
   if (args.length == 0) {
     logger.error("Missing parameter. You need to specify the config file directory and the bridge type")
   }
@@ -91,6 +113,7 @@ object BrokerBridge extends App {
   logger.info("\uD83C\uDF09 Starting bridge \uD83C\uDF09")
   args(1) match {
     case b if b.equalsIgnoreCase("kafkaToKinesis") => forwardRecordsFromKafkaToKinesis(BridgeConfig(configFile))
+    case b if b.equalsIgnoreCase("kinesisToKafka") => forwardRecordsFromKinesisToKafka(BridgeConfig(configFile))
     case _  => logger.error("Invalid bridge type")
   }
 
