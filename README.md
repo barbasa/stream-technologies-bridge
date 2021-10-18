@@ -28,6 +28,7 @@ _Streams configuration:_
 * `BRIDGE_KAFKA_GROUPID`: Kafka group id prefix
 * `BRIDGE_KINESIS_ENDPOINT`: Kinesis optional local endpoint to use for local debugging
 * `BRIDGE_KINESIS_REGION`: Kinesis AWS region
+* `BRIDGE_KINESIS_APPNAME`: Kinesis AWS application name
 
 _Common configuration_
 * `BRIDGE_COMMON_TOPICS`: name of the topics to consumer messages from, comma separated
