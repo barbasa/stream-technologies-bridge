@@ -1,0 +1,113 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "18b6ad41_1d6405fc",
+        "filename": "build.sbt",
+        "patchSetId": 16
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1005270
+      },
+      "writtenOn": "2021-10-20T09:50:18Z",
+      "side": 1,
+      "message": "use version variable here",
+      "range": {
+        "startLine": 7,
+        "startChar": 59,
+        "endLine": 7,
+        "endChar": 64
+      },
+      "revId": "43ee930c6170a6356b2fc41f1e4cfee89e2facdb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "26966374_64bc61b2",
+        "filename": "build.sbt",
+        "patchSetId": 16
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1005270
+      },
+      "writtenOn": "2021-10-20T09:50:18Z",
+      "side": 1,
+      "message": "what is that one covering?",
+      "range": {
+        "startLine": 12,
+        "startChar": 2,
+        "endLine": 12,
+        "endChar": 8
+      },
+      "revId": "43ee930c6170a6356b2fc41f1e4cfee89e2facdb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d8f97020_4dde9dca",
+        "filename": "src/main/resources/application.conf",
+        "patchSetId": 16
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1005270
+      },
+      "writtenOn": "2021-10-20T09:50:18Z",
+      "side": 1,
+      "message": "what about clusters without SSL?",
+      "range": {
+        "startLine": 12,
+        "startChar": 4,
+        "endLine": 12,
+        "endChar": 27
+      },
+      "revId": "43ee930c6170a6356b2fc41f1e4cfee89e2facdb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "78cb7316_7ad12bdc",
+        "filename": "src/main/scala/com/gerritforge/BridgeConfig.scala",
+        "patchSetId": 16
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1005270
+      },
+      "writtenOn": "2021-10-20T09:50:18Z",
+      "side": 1,
+      "message": "Why mutable map instead of standard scala map?",
+      "range": {
+        "startLine": 11,
+        "startChar": 17,
+        "endLine": 11,
+        "endChar": 21
+      },
+      "revId": "43ee930c6170a6356b2fc41f1e4cfee89e2facdb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "58fba368_45e30712",
+        "filename": "src/main/scala/com/gerritforge/bridge.properties",
+        "patchSetId": 16
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1005270
+      },
+      "writtenOn": "2021-10-20T09:50:18Z",
+      "side": 1,
+      "message": "Shouldn\u0027t that file be in the src/main/scala/resources?\nBtw what are those params? Is this pushed by mistake?",
+      "revId": "43ee930c6170a6356b2fc41f1e4cfee89e2facdb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
