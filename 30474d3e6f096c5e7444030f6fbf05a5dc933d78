@@ -24,6 +24,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "1b20edef_927b161a",
+        "filename": "README.md",
+        "patchSetId": 18
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2021-10-21T16:54:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2fc65ee2_6dbdc810",
+      "range": {
+        "startLine": 10,
+        "startChar": 4,
+        "endLine": 10,
+        "endChar": 17
+      },
+      "revId": "30474d3e6f096c5e7444030f6fbf05a5dc933d78",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "43290008_a3dfcb93",
@@ -37,6 +61,30 @@
       "writtenOn": "2021-10-21T09:00:15Z",
       "side": 1,
       "message": "Just use \u0027*\u0027 so you don\u0027t risk to have stale version numbers in the future.",
+      "range": {
+        "startLine": 16,
+        "startChar": 37,
+        "endLine": 16,
+        "endChar": 42
+      },
+      "revId": "30474d3e6f096c5e7444030f6fbf05a5dc933d78",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "95212115_3222916f",
+        "filename": "README.md",
+        "patchSetId": 18
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2021-10-21T16:54:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "43290008_a3dfcb93",
       "range": {
         "startLine": 16,
         "startChar": 37,
@@ -70,6 +118,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "59ea5550_2bd54247",
+        "filename": "README.md",
+        "patchSetId": 18
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2021-10-21T16:54:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "20a2301e_d136326e",
+      "range": {
+        "startLine": 25,
+        "startChar": 57,
+        "endLine": 25,
+        "endChar": 74
+      },
+      "revId": "30474d3e6f096c5e7444030f6fbf05a5dc933d78",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "33d276fa_e27cd277",
@@ -93,6 +165,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c8b21e88_7b872dfd",
+        "filename": "build.sbt",
+        "patchSetId": 18
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2021-10-21T16:54:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "33d276fa_e27cd277",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 4,
+        "endChar": 17
+      },
+      "revId": "30474d3e6f096c5e7444030f6fbf05a5dc933d78",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "687c356e_baa6b4db",
@@ -106,6 +202,30 @@
       "writtenOn": "2021-10-21T09:00:15Z",
       "side": 1,
       "message": "debug?",
+      "range": {
+        "startLine": 18,
+        "startChar": 17,
+        "endLine": 18,
+        "endChar": 22
+      },
+      "revId": "30474d3e6f096c5e7444030f6fbf05a5dc933d78",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e46ebe71_fa381572",
+        "filename": "src/main/resources/logback.xml",
+        "patchSetId": 18
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2021-10-21T16:54:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "687c356e_baa6b4db",
       "range": {
         "startLine": 18,
         "startChar": 17,
