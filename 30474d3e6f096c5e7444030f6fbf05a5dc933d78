@@ -1,0 +1,119 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2fc65ee2_6dbdc810",
+        "filename": "README.md",
+        "patchSetId": 18
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-10-21T09:00:15Z",
+      "side": 1,
+      "message": "I believe these are redundant, or am I wrong?",
+      "range": {
+        "startLine": 10,
+        "startChar": 4,
+        "endLine": 10,
+        "endChar": 17
+      },
+      "revId": "30474d3e6f096c5e7444030f6fbf05a5dc933d78",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "43290008_a3dfcb93",
+        "filename": "README.md",
+        "patchSetId": 18
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-10-21T09:00:15Z",
+      "side": 1,
+      "message": "Just use \u0027*\u0027 so you don\u0027t risk to have stale version numbers in the future.",
+      "range": {
+        "startLine": 16,
+        "startChar": 37,
+        "endLine": 16,
+        "endChar": 42
+      },
+      "revId": "30474d3e6f096c5e7444030f6fbf05a5dc933d78",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "20a2301e_d136326e",
+        "filename": "README.md",
+        "patchSetId": 18
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-10-21T09:00:15Z",
+      "side": 1,
+      "message": "Why not using a standard Scala configs instead? (reference.conf and application.conf)",
+      "range": {
+        "startLine": 25,
+        "startChar": 57,
+        "endLine": 25,
+        "endChar": 74
+      },
+      "revId": "30474d3e6f096c5e7444030f6fbf05a5dc933d78",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "33d276fa_e27cd277",
+        "filename": "build.sbt",
+        "patchSetId": 18
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-10-21T09:00:15Z",
+      "side": 1,
+      "message": "There is a git plugin to get this automatically:\nhttps://github.com/sbt/sbt-git",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 4,
+        "endChar": 17
+      },
+      "revId": "30474d3e6f096c5e7444030f6fbf05a5dc933d78",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "687c356e_baa6b4db",
+        "filename": "src/main/resources/logback.xml",
+        "patchSetId": 18
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-10-21T09:00:15Z",
+      "side": 1,
+      "message": "debug?",
+      "range": {
+        "startLine": 18,
+        "startChar": 17,
+        "endLine": 18,
+        "endChar": 22
+      },
+      "revId": "30474d3e6f096c5e7444030f6fbf05a5dc933d78",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
