@@ -166,6 +166,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "dedac320_52647653",
+        "filename": "src/main/resources/application.conf",
+        "patchSetId": 16
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2021-10-21T17:00:24Z",
+      "side": 1,
+      "message": "actually with system property: java -jar \"-Dakka.kafka.consumer.kafka-clients.security.protocol\u003dplaintext\"",
+      "parentUuid": "b4706fb7_2db029d1",
+      "range": {
+        "startLine": 12,
+        "startChar": 4,
+        "endLine": 12,
+        "endChar": 27
+      },
+      "revId": "43ee930c6170a6356b2fc41f1e4cfee89e2facdb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "78cb7316_7ad12bdc",
