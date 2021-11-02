@@ -1,0 +1,142 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "468a7777_3db507bf",
+        "filename": "src/main/resources/application.conf",
+        "patchSetId": 10
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1015244
+      },
+      "writtenOn": "2021-11-02T16:49:17Z",
+      "side": 1,
+      "message": "nit: unrelated",
+      "range": {
+        "startLine": 31,
+        "startChar": 0,
+        "endLine": 31,
+        "endChar": 114
+      },
+      "revId": "bb85ff58c23c383af40381e8f772692c24912674",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "34025ee0_7f408804",
+        "filename": "src/main/scala/com/gerritforge/BridgeKinesisConsumer.scala",
+        "patchSetId": 10
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1015244
+      },
+      "writtenOn": "2021-11-02T16:49:17Z",
+      "side": 1,
+      "message": "nit: can be private",
+      "range": {
+        "startLine": 29,
+        "startChar": 2,
+        "endLine": 29,
+        "endChar": 5
+      },
+      "revId": "bb85ff58c23c383af40381e8f772692c24912674",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "488a6e72_a9cee9fd",
+        "filename": "src/main/scala/com/gerritforge/BridgeKinesisConsumer.scala",
+        "patchSetId": 10
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1015244
+      },
+      "writtenOn": "2021-11-02T16:49:17Z",
+      "side": 1,
+      "message": "We could check if matches a valid URI?",
+      "range": {
+        "startLine": 35,
+        "startChar": 4,
+        "endLine": 35,
+        "endChar": 58
+      },
+      "revId": "bb85ff58c23c383af40381e8f772692c24912674",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6107fb15_a8395965",
+        "filename": "src/main/scala/com/gerritforge/BridgeKinesisConsumer.scala",
+        "patchSetId": 10
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1015244
+      },
+      "writtenOn": "2021-11-02T16:49:17Z",
+      "side": 1,
+      "message": "nit: Some of these configurations are in common between producer and consumer, consider factoring them out?",
+      "range": {
+        "startLine": 32,
+        "startChar": 0,
+        "endLine": 38,
+        "endChar": 5
+      },
+      "revId": "bb85ff58c23c383af40381e8f772692c24912674",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e415a9a7_e3983bf4",
+        "filename": "src/main/scala/com/gerritforge/BridgeKinesisConsumer.scala",
+        "patchSetId": 10
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 1015244
+      },
+      "writtenOn": "2021-11-02T16:49:17Z",
+      "side": 1,
+      "message": "Looks like credentials are not passed explicitly so that aws access key and aws secret access key are retrieved via the default credentials providers chain.\n\nIf that\u0027s the case then, this is meant to be executed in an environment that was already configured with aws.\n\nWhy do we need to explicitly set the region then, could/should we not rely on the default region chain provider similarly to what we do for the credentials?",
+      "range": {
+        "startLine": 106,
+        "startChar": 0,
+        "endLine": 106,
+        "endChar": 32
+      },
+      "revId": "bb85ff58c23c383af40381e8f772692c24912674",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6ccb0bbc_c5883d57",
+        "filename": "src/main/scala/com/gerritforge/BrokerBridge.scala",
+        "patchSetId": 10
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 1015244
+      },
+      "writtenOn": "2021-11-02T16:49:17Z",
+      "side": 1,
+      "message": "Could be useful to print the instanceId here too?",
+      "range": {
+        "startLine": 96,
+        "startChar": 0,
+        "endLine": 96,
+        "endChar": 76
+      },
+      "revId": "bb85ff58c23c383af40381e8f772692c24912674",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
