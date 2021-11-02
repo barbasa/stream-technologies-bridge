@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "02ff181c_46ac34ae",
+        "filename": "src/main/resources/application.conf",
+        "patchSetId": 20
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1015244
+      },
+      "writtenOn": "2021-11-02T15:19:40Z",
+      "side": 1,
+      "message": "These are not the standard topic names, should we replace them with the default ones created by the multi-site?",
+      "range": {
+        "startLine": 18,
+        "startChar": 1,
+        "endLine": 18,
+        "endChar": 112
+      },
+      "revId": "68da06ff965cfdcfc59a7f2fcaab5eca907175a2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ef6df7fc_c4782828",
+        "filename": "src/main/resources/application.conf",
+        "patchSetId": 20
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1015244
+      },
+      "writtenOn": "2021-11-02T15:19:40Z",
+      "side": 1,
+      "message": "This should probably be removed right?",
+      "range": {
+        "startLine": 34,
+        "startChar": 0,
+        "endLine": 34,
+        "endChar": 31
+      },
+      "revId": "68da06ff965cfdcfc59a7f2fcaab5eca907175a2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
