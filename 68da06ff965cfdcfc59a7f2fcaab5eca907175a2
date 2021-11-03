@@ -110,6 +110,24 @@
       "message": "nit: Copyright?",
       "revId": "68da06ff965cfdcfc59a7f2fcaab5eca907175a2",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e19ba9c5_1792bea5",
+        "filename": "src/main/scala/com/gerritforge/BridgeKinesisProducer.scala",
+        "patchSetId": 20
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2021-11-03T17:02:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e8383bee_cad7b4d5",
+      "revId": "68da06ff965cfdcfc59a7f2fcaab5eca907175a2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
