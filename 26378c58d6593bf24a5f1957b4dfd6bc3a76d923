@@ -24,6 +24,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "5c2babea_e1e4ca3c",
+        "filename": "README.md",
+        "patchSetId": 21
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2021-11-03T17:42:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "725ead9c_c9fd91bd",
+      "range": {
+        "startLine": 33,
+        "startChar": 48,
+        "endLine": 33,
+        "endChar": 56
+      },
+      "revId": "26378c58d6593bf24a5f1957b4dfd6bc3a76d923",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "90095e52_dc909637",
@@ -37,6 +61,24 @@
       "writtenOn": "2021-11-03T17:22:51Z",
       "side": 1,
       "message": "For version \u003c 3.4 I think we also need the `gerrit` topic?",
+      "revId": "26378c58d6593bf24a5f1957b4dfd6bc3a76d923",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9ac6f187_5fc5ea5a",
+        "filename": "src/main/resources/application.conf",
+        "patchSetId": 21
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2021-11-03T17:42:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "90095e52_dc909637",
       "revId": "26378c58d6593bf24a5f1957b4dfd6bc3a76d923",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
