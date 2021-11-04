@@ -29,8 +29,7 @@ case class BridgeKinesisConsumer(
   private val logger: Logger = Logger(
     LoggerFactory.getLogger(BridgeKinesisConsumer.getClass.getName)
   )
-  private val region =
-    bridgeConfig.conf.getString("bridge.kinesis.region")
+
   private val endpoint =
     bridgeConfig.conf.getString("bridge.kinesis.endpoint") match {
       case "" => None
@@ -83,7 +82,6 @@ case class BridgeKinesisConsumer(
     val clientBuilder = DynamoDbAsyncClient
       .builder()
       .httpClient(httpClient)
-      .region(Region.of(region))
 
     endpoint.map(clientBuilder.endpointOverride)
     clientBuilder.build
@@ -93,7 +91,6 @@ case class BridgeKinesisConsumer(
 
     val clientBuilder = CloudWatchAsyncClient.builder
       .httpClient(httpClient)
-      .region(Region.of(region))
 
     endpoint.map(clientBuilder.endpointOverride)
     clientBuilder.build
@@ -103,7 +100,6 @@ case class BridgeKinesisConsumer(
     val kinesisClientBuilder = KinesisAsyncClient
       .builder()
       .httpClient(httpClient)
-      .region(Region.of(region))
 
     endpoint.map(kinesisClientBuilder.endpointOverride)
     kinesisClientBuilder.build

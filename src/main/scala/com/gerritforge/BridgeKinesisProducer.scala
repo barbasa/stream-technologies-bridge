@@ -25,8 +25,6 @@ case class BridgeKinesisProducer(bridgeConfig: BridgeConfig) {
     LoggerFactory.getLogger(BridgeKinesisProducer.getClass.getName)
   )
 
-  private val region =
-    bridgeConfig.conf.getString("bridge.kinesis.region")
   private val endpoint =
     bridgeConfig.conf.getString("bridge.kinesis.endpoint") match {
       case "" => None
@@ -37,7 +35,6 @@ case class BridgeKinesisProducer(bridgeConfig: BridgeConfig) {
     val producerConfiguration = new KinesisProducerConfiguration()
       .setAggregationEnabled(false)
       .setMaxConnections(1)
-      .setRegion(region)
       .setVerifyCertificate(false)
 
     endpoint.map { e =>
