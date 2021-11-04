@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a37ba487_c615a6cc",
+        "filename": "src/main/scala/com/gerritforge/BridgeKinesisProducer.scala",
+        "patchSetId": 22
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1015244
+      },
+      "writtenOn": "2021-11-04T15:09:11Z",
+      "side": 1,
+      "message": "I made the same comment in the next change [1]\n\nI wonder whether we should pass region at all.\nIt seems that we are relying on the AWS environment for credentials, and I wonder if we should keep it consitent and have region being retrieved from there too?\n\n\n[1]https://review.gerrithub.io/c/barbasa/stream-technologies-bridge/+/525818/10/src/main/scala/com/gerritforge/BridgeKinesisConsumer.scala#106",
+      "range": {
+        "startLine": 28,
+        "startChar": 0,
+        "endLine": 29,
+        "endChar": 56
+      },
+      "revId": "391f854203d562f19de88d2d41fa034fb389fd84",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
