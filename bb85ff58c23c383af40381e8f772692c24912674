@@ -24,6 +24,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "76d57611_69cf5da2",
+        "filename": "src/main/resources/application.conf",
+        "patchSetId": 10
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2021-11-04T18:41:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "468a7777_3db507bf",
+      "range": {
+        "startLine": 31,
+        "startChar": 0,
+        "endLine": 31,
+        "endChar": 114
+      },
+      "revId": "bb85ff58c23c383af40381e8f772692c24912674",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "34025ee0_7f408804",
@@ -47,6 +71,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "bad73141_5a64035c",
+        "filename": "src/main/scala/com/gerritforge/BridgeKinesisConsumer.scala",
+        "patchSetId": 10
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2021-11-04T18:41:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "34025ee0_7f408804",
+      "range": {
+        "startLine": 29,
+        "startChar": 2,
+        "endLine": 29,
+        "endChar": 5
+      },
+      "revId": "bb85ff58c23c383af40381e8f772692c24912674",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "488a6e72_a9cee9fd",
@@ -60,6 +108,30 @@
       "writtenOn": "2021-11-02T16:49:17Z",
       "side": 1,
       "message": "We could check if matches a valid URI?",
+      "range": {
+        "startLine": 35,
+        "startChar": 4,
+        "endLine": 35,
+        "endChar": 58
+      },
+      "revId": "bb85ff58c23c383af40381e8f772692c24912674",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "16011aad_3151c3e6",
+        "filename": "src/main/scala/com/gerritforge/BridgeKinesisConsumer.scala",
+        "patchSetId": 10
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2021-11-04T18:41:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "488a6e72_a9cee9fd",
       "range": {
         "startLine": 35,
         "startChar": 4,
@@ -95,6 +167,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "ec4071f5_2beb819f",
+        "filename": "src/main/scala/com/gerritforge/BridgeKinesisConsumer.scala",
+        "patchSetId": 10
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2021-11-04T18:41:49Z",
+      "side": 1,
+      "message": "\"region\" and \"endpoint\" are the configurations in common. Considering we are dropping \"region\", the only setting would be \"endpoint\" for the time being, in which case I don\u0027t think it is worth adding a class just for it.\n\nWDYT?",
+      "parentUuid": "6107fb15_a8395965",
+      "range": {
+        "startLine": 32,
+        "startChar": 0,
+        "endLine": 38,
+        "endChar": 5
+      },
+      "revId": "bb85ff58c23c383af40381e8f772692c24912674",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "e415a9a7_e3983bf4",
         "filename": "src/main/scala/com/gerritforge/BridgeKinesisConsumer.scala",
         "patchSetId": 10
@@ -118,6 +214,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "bb44deb2_7a43c6ed",
+        "filename": "src/main/scala/com/gerritforge/BridgeKinesisConsumer.scala",
+        "patchSetId": 10
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2021-11-04T18:41:49Z",
+      "side": 1,
+      "message": "Dropping it all together with the Producer in the follow-up change: https://review.gerrithub.io/c/barbasa/stream-technologies-bridge/+/526781",
+      "parentUuid": "e415a9a7_e3983bf4",
+      "range": {
+        "startLine": 106,
+        "startChar": 0,
+        "endLine": 106,
+        "endChar": 32
+      },
+      "revId": "bb85ff58c23c383af40381e8f772692c24912674",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "6ccb0bbc_c5883d57",
         "filename": "src/main/scala/com/gerritforge/BrokerBridge.scala",
         "patchSetId": 10
@@ -129,6 +249,30 @@
       "writtenOn": "2021-11-02T16:49:17Z",
       "side": 1,
       "message": "Could be useful to print the instanceId here too?",
+      "range": {
+        "startLine": 96,
+        "startChar": 0,
+        "endLine": 96,
+        "endChar": 76
+      },
+      "revId": "bb85ff58c23c383af40381e8f772692c24912674",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e27f385f_b4af10f6",
+        "filename": "src/main/scala/com/gerritforge/BrokerBridge.scala",
+        "patchSetId": 10
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2021-11-04T18:41:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6ccb0bbc_c5883d57",
       "range": {
         "startLine": 96,
         "startChar": 0,
