@@ -189,6 +189,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c506db9b_b5d5d20d",
+        "filename": "src/main/scala/com/gerritforge/BridgeKinesisConsumer.scala",
+        "patchSetId": 10
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1015244
+      },
+      "writtenOn": "2021-11-04T20:18:47Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "ec4071f5_2beb819f",
+      "range": {
+        "startLine": 32,
+        "startChar": 0,
+        "endLine": 38,
+        "endChar": 5
+      },
+      "revId": "bb85ff58c23c383af40381e8f772692c24912674",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e415a9a7_e3983bf4",
@@ -226,6 +250,30 @@
       "side": 1,
       "message": "Dropping it all together with the Producer in the follow-up change: https://review.gerrithub.io/c/barbasa/stream-technologies-bridge/+/526781",
       "parentUuid": "e415a9a7_e3983bf4",
+      "range": {
+        "startLine": 106,
+        "startChar": 0,
+        "endLine": 106,
+        "endChar": 32
+      },
+      "revId": "bb85ff58c23c383af40381e8f772692c24912674",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "753d7efc_86fa7acd",
+        "filename": "src/main/scala/com/gerritforge/BridgeKinesisConsumer.scala",
+        "patchSetId": 10
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 1015244
+      },
+      "writtenOn": "2021-11-04T20:18:47Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "bb44deb2_7a43c6ed",
       "range": {
         "startLine": 106,
         "startChar": 0,
