@@ -69,6 +69,24 @@
       "parentUuid": "a9cd5091_416e1b6e",
       "revId": "4d9d37eef024ecd6588339af5707ea4b9cd4aae5",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1b8733d3_a51a3038",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1015244
+      },
+      "writtenOn": "2021-11-16T13:45:43Z",
+      "side": 1,
+      "message": "\u003e No, I can\u0027t figure out why is not picked up. However, looking at the KinesisProducerConfiguration code, the only way the region is set is via `setRegion`.\n\nYes, the only way it is explicitly set is via `setRegion`, AFAIU.\n\nI don\u0027t see anywhere the usage of the region provider...unless I have to explicitly use it and pass it to the KinesisProducerConfiguration.\n\nLooking at the docs if you use, for example:\n\n```\nAmazonEC2 ec2 \u003d AmazonEC2ClientBuilder.defaultClient();\n```\n\nand standard client\n\n```\nAmazonEC2 ec2 \u003d AmazonEC2ClientBuilder.standard()\n                    .build();\n```\n\nit should work.\n\n\n```\nIf you don’t explicitly set a region using the withRegion methods, the SDK consults the default region provider chain to try and determine the region to use.\n```\n\nPerhaps it depends on how you are creating the clients then?",
+      "parentUuid": "71dccf65_80112645",
+      "revId": "4d9d37eef024ecd6588339af5707ea4b9cd4aae5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
