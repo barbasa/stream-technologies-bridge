@@ -14,6 +14,7 @@
 
 package com.gerritforge
 
+import com.amazonaws.regions.DefaultAwsRegionProviderChain
 import com.amazonaws.services.kinesis.producer.KinesisProducerConfiguration
 import com.contxt.kinesis.ScalaKinesisProducer
 import com.typesafe.scalalogging.Logger
@@ -35,6 +36,7 @@ case class BridgeKinesisProducer(bridgeConfig: BridgeConfig) {
     val producerConfiguration = new KinesisProducerConfiguration()
       .setAggregationEnabled(false)
       .setMaxConnections(1)
+      .setRegion(new DefaultAwsRegionProviderChain().getRegion)
       .setVerifyCertificate(false)
 
     endpoint.map { e =>
