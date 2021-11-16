@@ -51,6 +51,24 @@
       "message": "Do you know why is not picked up?\n\nAs per documentation[1] the default region provider should do:\n\n1 - Any explicit region set by using withRegion or setRegion on the builder itself takes precedence over anything else.\n\n2 - The AWS_REGION environment variable is checked. If it’s set, that region is used to configure the client.\n\n3 - The SDK checks the AWS shared configuration file (usually located at ~/.aws/config). If the region property is present, the SDK uses it.\n\n4 - The SDK attempts to use the Amazon EC2 instance metadata service to determine the region of the currently running Amazon EC2 instance.\n\n5 - If the SDK still hasn’t found a region by this point, client creation fails with an exception.\n\n\n[1]https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-region-selection.html",
       "revId": "4d9d37eef024ecd6588339af5707ea4b9cd4aae5",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "71dccf65_80112645",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2021-11-16T13:38:23Z",
+      "side": 1,
+      "message": "No, I can\u0027t figure out why is not picked up. However, looking at the KinesisProducerConfiguration code, the only way the region is set is via `setRegion`. I don\u0027t see anywhere the usage of the region provider...unless I have to explicitly use it and pass it to the KinesisProducerConfiguration.",
+      "parentUuid": "a9cd5091_416e1b6e",
+      "revId": "4d9d37eef024ecd6588339af5707ea4b9cd4aae5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
