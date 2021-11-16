@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "84e331be_570d705a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2021-11-16T13:16:27Z",
+      "side": 1,
+      "message": "Reverting since without the region is not picked up.\n\nLooking at the DefaultAWSCredentialsProviderChain code [1], it actually seems that only secret and accessKey are coming from the chain.\n\n\nhttps://github.com/aws/aws-sdk-java/blob/master/aws-java-sdk-core/src/main/java/com/amazonaws/auth/DefaultAWSCredentialsProviderChain.java#L20",
+      "revId": "4d9d37eef024ecd6588339af5707ea4b9cd4aae5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
