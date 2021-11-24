@@ -65,29 +65,31 @@ object BrokerBridge extends App {
 
     }
 
-    val control =
-      Consumer
-        .committableSource(BridgeKafkaConsumer(bridgeConfig).settings, Subscriptions.topics(bridgeConfig.topics))
-        .mapAsync(1) { msg =>
-          val topic = msg.record.topic
-          val value = msg.record.value
-          if (!bridgeConfig.onlyForwardLocalMessages || (bridgeConfig.onlyForwardLocalMessages && value.contains(s"\"instanceId\":\"${bridgeConfig.instanceId}\""))) {
-            logger.debug(s"Forwarding message for topic '$topic' - value snippet ${value.substring(0,40)}")
-            writeToKinesis(topic, value)
-                    .map(_ => msg.committableOffset)
-          } else {
-            logger.debug(s"Skipping message forwarding for topic '$topic'")
-            Future {
-              msg.committableOffset
-            }
-          }
-        }
-        .toMat(Committer.sink(CommitterSettings(actorSystem)))(DrainingControl.apply)
-        .run()
+    val controls: Seq[DrainingControl[Done]] = bridgeConfig.topics.toList.foldLeft(Seq[DrainingControl[Done]]()) { (a, topic) =>
+      val runnableGraph: DrainingControl[Done] = Consumer
+              .committableSource(BridgeKafkaConsumer(bridgeConfig).settings, Subscriptions.topics(topic))
+              .mapAsync(1) { msg =>
+                val topic = msg.record.topic
+                val value = msg.record.value
+                if (!bridgeConfig.onlyForwardLocalMessages || (bridgeConfig.onlyForwardLocalMessages && value.contains(s"\"instanceId\":\"${bridgeConfig.instanceId}\""))) {
+                  logger.debug(s"Forwarding message for topic '$topic' - value snippet ${value.substring(0,50)}")
+                  writeToKinesis(topic, value)
+                          .map(_ => msg.committableOffset)
+                } else {
+                  logger.debug(s"Skipping message forwarding for topic '$topic'")
+                  Future {
+                    msg.committableOffset
+                  }
+                }
+              }
+              .toMat(Committer.sink(CommitterSettings(actorSystem)))(DrainingControl.apply).run()
+
+      a :+ runnableGraph
+    }
 
     sys.ShutdownHookThread {
       logger.info("\uD83D\uDD0C Shutting down bridge \uD83D\uDD0C")
-      Await.result(control.drainAndShutdown, 1.minute)
+      controls.map(control => Await.result(control.drainAndShutdown, 1.minute))
       bridgeKinesisProducer.kinesisProducers.foreach{ case (topic, consumer) =>
         logger.info(s"\uD83D\uDD0C * Shutting Kinesis producer for topic $topic \uD83D\uDD0C")
         Await.result(consumer.shutdown(), 5.minutes)
