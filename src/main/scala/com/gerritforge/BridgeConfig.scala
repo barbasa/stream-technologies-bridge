@@ -24,7 +24,6 @@ case class BridgeConfig() {
   //TODO: Check if at least a topic is defined
   val topics: Set[String] =
     conf.getStringList("bridge.common.topics").asScala.toSet
-  val onlyForwardLocalMessages: Boolean =
-    conf.getBoolean("bridge.common.onlyForwardLocalMessages")
-  val instanceId: String = conf.getString("bridge.common.instanceId")
+  val forwardableInstanceIds: List[String] =
+    conf.getStringList("bridge.common.forwardableInstanceIds").asScala.toList
 }

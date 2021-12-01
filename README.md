@@ -32,6 +32,6 @@ _Streams configuration:_
 
 _Common configuration_
 * `BRIDGE_COMMON_TOPICS`: name of the topics to consume messages from, comma separated
-* `BRIDGE_COMMON_ONLY_FORWARD_LOCAL_MESSAGES`: when using the agent to forward messages between different Gerrit instances,
-  to avoid loops, only messages locally produced might have to be published back
-* `BRIDGE_COMMON_INSTANCEID`: Gerrit instance id, used to determine the origin of the messages
+* `BRIDGE_COMMON_FORWARDABLE_INSTACE_IDS`: Only messages originated from the Gerrit with
+[instanceId](https://gerrit-review.googlesource.com/Documentation/config-gerrit.html#:~:text=should%20be%20used).-,gerrit.instanceId,-Optional%20identifier%20for)
+in this list will be forwarded.

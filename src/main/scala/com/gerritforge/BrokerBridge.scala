@@ -71,7 +71,7 @@ object BrokerBridge extends App {
               .mapAsync(1) { msg =>
                 val topic = msg.record.topic
                 val value = msg.record.value
-                if (!bridgeConfig.onlyForwardLocalMessages || (bridgeConfig.onlyForwardLocalMessages && value.contains(s"\"instanceId\":\"${bridgeConfig.instanceId}\""))) {
+                if (shouldForwardMessage(bridgeConfig, value)) {
                   logger.debug(s"Forwarding message for topic '$topic' - value snippet ${value.substring(0,50)}")
                   writeToKinesis(topic, value)
                           .map(_ => msg.committableOffset)
@@ -106,7 +106,7 @@ object BrokerBridge extends App {
 
       bridgeKinesisConsumer.bridgeKinesisConsumerSources.foreach{ case (topic: String, source: Source[KinesisRecord, Future[Done]]) =>
         source.filter { kinesisRecord =>
-          if (!bridgeConfig.onlyForwardLocalMessages || (bridgeConfig.onlyForwardLocalMessages && kinesisRecord.data.utf8String.contains(s"\"instanceId\":\"${bridgeConfig.instanceId}\""))) {
+          if (shouldForwardMessage(bridgeConfig, kinesisRecord.data.utf8String)) {
               true
           } else {
               logger.info(s"Skipping message forwarding for topic '$topic' - instanceId '${bridgeConfig.instanceId}'")
@@ -125,6 +125,9 @@ object BrokerBridge extends App {
 
       bridgeKinesisConsumer.handleShutDown()
     }
+
+    private def shouldForwardMessage(bridgeConfig: BridgeConfig, payload: String) =
+        bridgeConfig.forwardableInstanceIds.exists(instanceId => payload.contains(s"\"instanceId\":\"$instanceId\""))
 
   if (args.length == 0) {
     logger.error("Missing parameter. You need to specify the bridge type")
