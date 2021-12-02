@@ -1,0 +1,142 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f2c0ea5c_c610504e",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1015244
+      },
+      "writtenOn": "2021-12-02T09:59:54Z",
+      "side": 1,
+      "message": "We always want to filter only messages that originated in `FORWARDABLE_INSTACE_IDS` right?\n\nWhy do we need this extra parameter?",
+      "range": {
+        "startLine": 35,
+        "startChar": 0,
+        "endLine": 36,
+        "endChar": 68
+      },
+      "revId": "dcb292153755fd8988ebaf6c6600eadb1e360604",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0b6d1f52_09fc1c29",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1015244
+      },
+      "writtenOn": "2021-12-02T09:59:54Z",
+      "side": 1,
+      "message": "s/published back/published/",
+      "range": {
+        "startLine": 36,
+        "startChar": 54,
+        "endLine": 36,
+        "endChar": 68
+      },
+      "revId": "dcb292153755fd8988ebaf6c6600eadb1e360604",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1a4209d5_4a4b2ac2",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1015244
+      },
+      "writtenOn": "2021-12-02T09:59:54Z",
+      "side": 1,
+      "message": "Should we explain that *only* these messages will be forwarded?",
+      "range": {
+        "startLine": 37,
+        "startChar": 43,
+        "endLine": 37,
+        "endChar": 119
+      },
+      "revId": "dcb292153755fd8988ebaf6c6600eadb1e360604",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e0c41d70_b44e78b9",
+        "filename": "src/main/resources/application.conf",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1015244
+      },
+      "writtenOn": "2021-12-02T09:59:54Z",
+      "side": 1,
+      "message": "should probably remove this value?",
+      "range": {
+        "startLine": 34,
+        "startChar": 30,
+        "endLine": 34,
+        "endChar": 70
+      },
+      "revId": "dcb292153755fd8988ebaf6c6600eadb1e360604",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7dbbdd9c_23775503",
+        "filename": "src/main/resources/application.conf",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1015244
+      },
+      "writtenOn": "2021-12-02T09:59:54Z",
+      "side": 1,
+      "message": "What happens when this is empty?\nIt will not forward any message right?\n\nIs that an allowed configuration?",
+      "range": {
+        "startLine": 34,
+        "startChar": 4,
+        "endLine": 34,
+        "endChar": 71
+      },
+      "revId": "dcb292153755fd8988ebaf6c6600eadb1e360604",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d226b51b_b503816e",
+        "filename": "src/main/scala/com/gerritforge/BrokerBridge.scala",
+        "patchSetId": 1
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 1015244
+      },
+      "writtenOn": "2021-12-02T09:59:54Z",
+      "side": 1,
+      "message": "This is redundant on the right side of the OR condition, we know it is going to be true.",
+      "range": {
+        "startLine": 131,
+        "startChar": 12,
+        "endLine": 131,
+        "endChar": 39
+      },
+      "revId": "dcb292153755fd8988ebaf6c6600eadb1e360604",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
