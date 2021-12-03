@@ -47,6 +47,54 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "45056c02_7be42cf0",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2021-12-03T11:47:58Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "f2c0ea5c_c610504e",
+      "range": {
+        "startLine": 35,
+        "startChar": 0,
+        "endLine": 36,
+        "endChar": 68
+      },
+      "revId": "dcb292153755fd8988ebaf6c6600eadb1e360604",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f658254c_08aa0ac3",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2021-12-03T11:47:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0b6d1f52_09fc1c29",
+      "range": {
+        "startLine": 36,
+        "startChar": 54,
+        "endLine": 36,
+        "endChar": 68
+      },
+      "revId": "dcb292153755fd8988ebaf6c6600eadb1e360604",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "1a4209d5_4a4b2ac2",
@@ -60,6 +108,30 @@
       "writtenOn": "2021-12-02T09:59:54Z",
       "side": 1,
       "message": "Should we explain that *only* these messages will be forwarded?",
+      "range": {
+        "startLine": 37,
+        "startChar": 43,
+        "endLine": 37,
+        "endChar": 119
+      },
+      "revId": "dcb292153755fd8988ebaf6c6600eadb1e360604",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "02564409_5e9e3b43",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2021-12-03T11:47:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1a4209d5_4a4b2ac2",
       "range": {
         "startLine": 37,
         "startChar": 43,
@@ -116,6 +188,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f5567263_55773048",
+        "filename": "src/main/resources/application.conf",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2021-12-03T11:47:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e0c41d70_b44e78b9",
+      "range": {
+        "startLine": 34,
+        "startChar": 30,
+        "endLine": 34,
+        "endChar": 70
+      },
+      "revId": "dcb292153755fd8988ebaf6c6600eadb1e360604",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d226b51b_b503816e",
@@ -129,6 +225,30 @@
       "writtenOn": "2021-12-02T09:59:54Z",
       "side": 1,
       "message": "This is redundant on the right side of the OR condition, we know it is going to be true.",
+      "range": {
+        "startLine": 131,
+        "startChar": 12,
+        "endLine": 131,
+        "endChar": 39
+      },
+      "revId": "dcb292153755fd8988ebaf6c6600eadb1e360604",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7dd871bf_2caccc3e",
+        "filename": "src/main/scala/com/gerritforge/BrokerBridge.scala",
+        "patchSetId": 1
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2021-12-03T11:47:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d226b51b_b503816e",
       "range": {
         "startLine": 131,
         "startChar": 12,
