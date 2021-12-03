@@ -212,6 +212,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "bf0d0b29_9595dbe1",
+        "filename": "src/main/resources/application.conf",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2021-12-03T15:44:54Z",
+      "side": 1,
+      "message": "At the moment it silently doesn\u0027t do anything. Probably worth making it clearer. I would od it in a follow up if it is ok for you.",
+      "parentUuid": "7dbbdd9c_23775503",
+      "range": {
+        "startLine": 34,
+        "startChar": 4,
+        "endLine": 34,
+        "endChar": 71
+      },
+      "revId": "dcb292153755fd8988ebaf6c6600eadb1e360604",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d226b51b_b503816e",
